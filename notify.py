@@ -20,7 +20,7 @@ def setup_driver():
 
 def setup_db():
     client = MongoClient(os.getenv("MONGO_URI", ""))
-    db = client["tpo-notify-database"]
+    db = client["TPO"]
     return db.companies
 
 def clear_collection(collection):
