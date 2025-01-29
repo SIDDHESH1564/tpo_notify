@@ -39,4 +39,4 @@ jobs:
         echo "EMAIL=${{ secrets.EMAIL }}" >> .env
 
     - name: Run script
-      run: poetry run python tpo_notify/notify.py
+      run: poetry run python notify.py
